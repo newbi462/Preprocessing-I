@@ -39,20 +39,21 @@ function showAll() {
   var toggleSkills = document.getElementById("Skills");
   var toggleWorkHistory = document.getElementById("WorkHistory");
   var toggleContact = document.getElementById("Contact");
+  var placeholder = document.getElementById("holder");
 
-  toggleIntro.style.display = "none";
-  toggleSkills.style.display = "none";
-  toggleWorkHistory.style.display = "none";
-  toggleHide3.style.display = "none";
-  toggleContact.style.display = "none";
+  toggleIntro.style.display = "block";
+  toggleSkills.style.display = "block";
+  toggleWorkHistory.style.display = "block";
+  toggleContact.style.display = "block";
+  placeholder.style.display = "none";
 
-  if (toggleIntro.style.display === "none") {
-    toggleShow.style.display = "block";
+/*  if (toggleIntro.style.display === "none") {
+    toggleIntro.style.display = "block";
     toggleSkills.style.display = "block";
     toggleWorkHistory.style.display = "block";
     toggleContact.style.display = "block";
   }
   else {
     toggleShow.style.display = "none";
-  }
+  }*/
 }
