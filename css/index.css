@@ -135,11 +135,11 @@ html,
 body {
   height: 90%;
   width: 75%;
-  margin: 1% auto;
+  margin: 0 auto;
 }
 header {
   background: #428bca;
-  border-radius: 10px;
+  height: 100px;
 }
 /*START MY CODE*/
 /*
