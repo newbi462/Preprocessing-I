@@ -1,3 +1,4 @@
+
 @import "vars";
 @import "mixins";
 
@@ -63,8 +64,17 @@ html, body {
 
 
 /*START MY CODE*/
+
+
+
+
+.initiallyHidden {
+//	display: none;
+}
+
 html {
   font-size: 62.5%;
+	font-family: @fontVar;
 }
 
 body {
@@ -93,14 +103,21 @@ header {
 		padding: 20px;
 	}
 
+	nav a {
+		color: @altcolorVar;
+		text-decoration: none;
+	}
+
 
 	@media @tablet {}
 	@media @desktop {}
 }
 
-.initiallyHidden {
-//	display: none;
+/*main area*/
+section div {
+	margin: 20px;
 }
+
 
 
 

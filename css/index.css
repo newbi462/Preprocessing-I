@@ -1,4 +1,11 @@
 /*Mobile fors less var set*/
+@font-face {
+  font-family: 'Mansalva';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Mansalva Regular'), local('Mansalva-Regular'), url(https://fonts.gstatic.com/s/mansalva/v1/aWB4m0aacbtDfvq5NKliKYo.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -138,6 +145,7 @@ body {
 /*START MY CODE*/
 html {
   font-size: 62.5%;
+  font-family: 'Mansalva', cursive;
 }
 body {
   height: 90%;
@@ -161,6 +169,14 @@ header {
 }
 header h1 {
   padding: 20px;
+}
+header nav a {
+  color: #18CAE6;
+  text-decoration: none;
+}
+/*main area*/
+section div {
+  margin: 20px;
 }
 /*
 @media @tablet {}
