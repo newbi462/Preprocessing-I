@@ -143,6 +143,9 @@ body {
   height: 100%;
 }
 /*START MY CODE*/
+.initiallyHidden {
+  display: none;
+}
 html {
   font-size: 62.5%;
   font-family: 'Mansalva', cursive;
@@ -165,18 +168,80 @@ h6 {
 }
 header {
   background: #428bca;
-  height: 100px;
 }
 header h1 {
   padding: 20px;
 }
+header nav {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  font-size: 2.2rem;
+  padding: 5px 0 1em 0;
+}
 header nav a {
   color: #18CAE6;
   text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid silver;
+}
+header nav a:hover {
+  color: silver;
+  text-shadow: 2px 1px black;
+}
+@media (min-width: 500px) {
+  header nav {
+    flex-flow: row;
+  }
+  header nav a {
+    padding: 0px;
+    width: 15%;
+    border: 0px solid silver;
+  }
 }
 /*main area*/
+section {
+  border: 1px solid #428bca;
+}
 section div {
-  margin: 20px;
+  margin: 20px 3%;
+  padding: 15px;
+  border: 1px solid #428bca;
+}
+section div h3 {
+  font-size: 2rem;
+  margin: 10px 4px 5px 4px;
+}
+section h2 {
+  padding: 5px 0 5px 0;
+  font-size: 3rem;
+}
+section p,
+section ul li {
+  font-size: 1.6rem;
+  margin: 12px 0;
+}
+@media (min-width: 500px) {
+  section div {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #428bca;
+  }
+  section div h3 {
+    font-size: 2.8rem;
+    margin: 20px 8px 10px 8px;
+  }
+  section h2 {
+    padding: 5px 0 15px 0;
+    font-size: 4rem;
+  }
+  section p,
+  section ul li {
+    font-size: 1.8rem;
+    margin: 12px 0;
+  }
 }
 /*
 @media @tablet {}

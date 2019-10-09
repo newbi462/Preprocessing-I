@@ -69,7 +69,7 @@ html, body {
 
 
 .initiallyHidden {
-//	display: none;
+	display: none;
 }
 
 html {
@@ -96,26 +96,81 @@ h2, h3, h4, h5, h6 {
 
 header {
 	background: @maincolorVar;
-	height: 100px;
 	//border-radius: 10px;
 
 	h1 {
 		padding: 20px;
 	}
-
+	nav {
+		.flexnavMixin();
+		flex-flow: column;
+		font-size: 2.2rem;
+		padding: 5px 0 1em 0;
+	}
 	nav a {
 		color: @altcolorVar;
 		text-decoration: none;
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+		border: 1px solid @hovercolorVar;
 	}
-
-
-	@media @tablet {}
+	nav a:hover {
+		.hoverMixin();
+	}
+	@media @tablet {
+		nav {
+			flex-flow: row;
+		}
+		nav a {
+			padding: 0px;
+			width: 15%;
+			border: 0px solid @hovercolorVar;
+		}
+	}
 	@media @desktop {}
 }
 
 /*main area*/
-section div {
-	margin: 20px;
+section {
+	border: 1px solid @maincolorVar;
+	div {
+		margin: 20px 3%;
+		padding: 15px;
+		border: 1px solid @maincolorVar;
+		h3 {
+			font-size: 2.0rem;
+			margin: 10px 4px 5px 4px;
+		}
+	}
+	h2 {
+		padding: 5px 0 5px 0;
+		font-size: 3.0rem;
+	}
+	p, ul li {
+		font-size: 1.6rem;
+		margin: 12px 0;
+	}
+	@media @tablet {
+		div {
+			margin: 20px;
+			padding: 15px;
+			border: 1px solid @maincolorVar;
+			h3 {
+				font-size: 2.8rem;
+				margin: 20px 8px 10px 8px;
+			}
+		}
+		h2 {
+			padding: 5px 0 15px 0;
+			font-size: 4.0rem;
+		}
+		p, ul li {
+			font-size: 1.8rem;
+			margin: 12px 0;
+		}
+	}
+	@media @desktop {}
 }
 
 
