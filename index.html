@@ -17,29 +17,36 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <h1>My Resume</h1>
+    <nav>
+      <a href="#" onclick="showHideToggle('Intro','Skills','WorkHistory','Contact');">Intro</a>
+      <a href="#" onclick="showHideToggle('Skills','Intro','WorkHistory','Contact');">Skills</a>
+      <a href="#" onclick="showHideToggle('WorkHistory','Intro','Skills','Contact');">WorkHistory</a>
+      <a href="#" onclick="showHideToggle('Contact','Intro','Skills','WorkHistory');">Contact</a>
+      Show All
+    </nav>
 
-  <button onclick="showHideIntro()">showHideIntro</button>
+  </header>
 
-  <nav>
-    <a href="#" onclick="showHideIntro();">showHideIntro</a>
-  </nav>
+  <section>
+    <div id="Intro" class="initiallyHidden">
+      Intro box
+    </div>
 
-  <div id="Intro">
-    Intro box
-  </div>
+    <div id="Skills" class="initiallyHidden">
+      Skills Box
+    </div>
 
-  <div id="Skills">
-    Skills Box
-  </div>
+    <div id="WorkHistory" class="initiallyHidden">
+      Work-History Box
+    </div>
 
-  <div id="WorkHistory">
-    Work-History Box
-  </div>
+    <div id="Contact" class="initiallyHidden">
+      Contact Box
+    </div>
+  </section>
 
-  <div id="Contact">
-    Contact Box
-  </div>
 
 
   <!-- Java Script -->
