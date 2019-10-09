@@ -57,20 +57,47 @@ table {
 }
 
 html, body {
+    height: 100%;
+}
+
+
+
+/*START MY CODE*/
+html {
+  font-size: 62.5%;
+}
+
+body {
     height: 90%;//lets not have a scrol bar please unless needed
-		width: 75%;
+		width: 65%;
 		margin: 0 auto;
 		@media @tablet {}
 		@media @desktop {}
 }
 
-header {
-	background: #428bca;
-	height: 100px;
-	//border-radius: 10px;
+h1 {
+	font-size: 3.85rem;
 }
 
-/*START MY CODE*/
+h2, h3, h4, h5, h6 {
+	color: @maincolorVar;
+	font-size: 1.6rem;
+}
+
+header {
+	background: @maincolorVar;
+	height: 100px;
+	//border-radius: 10px;
+
+	h1 {
+		padding: 20px;
+	}
+
+
+	@media @tablet {}
+	@media @desktop {}
+}
+
 .initiallyHidden {
 //	display: none;
 }

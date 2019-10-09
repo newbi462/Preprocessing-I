@@ -133,15 +133,35 @@ table {
 }
 html,
 body {
+  height: 100%;
+}
+/*START MY CODE*/
+html {
+  font-size: 62.5%;
+}
+body {
   height: 90%;
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
+}
+h1 {
+  font-size: 3.85rem;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #428bca;
+  font-size: 1.6rem;
 }
 header {
   background: #428bca;
   height: 100px;
 }
-/*START MY CODE*/
+header h1 {
+  padding: 20px;
+}
 /*
 @media @tablet {}
 @media @desktop {}
