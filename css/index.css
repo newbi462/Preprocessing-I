@@ -171,6 +171,7 @@ header {
 }
 header h1 {
   padding: 20px;
+  display: inline-block;
 }
 header nav {
   display: flex;
@@ -178,6 +179,7 @@ header nav {
   flex-flow: column;
   font-size: 2.2rem;
   padding: 5px 0 1em 0;
+  display: none;
 }
 header nav a {
   color: #18CAE6;
@@ -191,8 +193,15 @@ header nav a:hover {
   color: silver;
   text-shadow: 2px 1px black;
 }
+header .hideme img {
+  width: 20%;
+}
 @media (min-width: 500px) {
+  header .hideme {
+    display: none;
+  }
   header nav {
+    display: flex;
     flex-flow: row;
   }
   header nav a {

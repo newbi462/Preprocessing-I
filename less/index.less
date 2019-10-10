@@ -100,12 +100,14 @@ header {
 
 	h1 {
 		padding: 20px;
+		display: inline-block;
 	}
 	nav {
 		.flexnavMixin();
 		flex-flow: column;
 		font-size: 2.2rem;
 		padding: 5px 0 1em 0;
+		display: none;
 	}
 	nav a {
 		color: @altcolorVar;
@@ -118,8 +120,15 @@ header {
 	nav a:hover {
 		.hoverMixin();
 	}
+	.hideme img {
+		width: 20%;
+	}
 	@media @tablet {
+		.hideme {
+			display: none;
+		}
 		nav {
+			display: flex;
 			flex-flow: row;
 		}
 		nav a {

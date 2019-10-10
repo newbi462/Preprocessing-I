@@ -57,3 +57,17 @@ function showAll() {
     toggleShow.style.display = "none";
   }*/
 }
+
+
+function hideMenu() {
+  var toggleNav = document.getElementById("navbox");
+
+//  toggleNav.style.display = "none";
+
+  if (toggleNav.style.display === "none") {
+    toggleNav.style.display = "flex";
+  }
+  else {
+    toggleNav.style.display = "none";
+  }
+}
