@@ -8,12 +8,85 @@
 
   <link rel="stylesheet" href="css/index.css">
 
+  <link rel="shortcut icon" href="img/favicon.ico" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <div>
+      <a href="#" onclick="hideMenu()" class="hideme">
+        <img src="img/hamburger.png" alt="hamburger menu">
+      </a>
+      <h1>My Resume</h1>
+    </div>
+    <nav id="navbox">
+      <a href="#" onclick="showHideToggle('Intro','Skills','WorkHistory','Contact');">Intro</a>
+      <a href="#" onclick="showHideToggle('Skills','Intro','WorkHistory','Contact');">Skills</a>
+      <a href="#" onclick="showHideToggle('WorkHistory','Intro','Skills','Contact');">WorkHistory</a>
+      <a href="#" onclick="showHideToggle('Contact','Intro','Skills','WorkHistory');">Contact</a>
+      <a href="#" onclick="showAll()">Show&nbsp;All</a>
+    </nav>
+
+  </header>
+
+  <section>
+    <div id="holder">
+      <h2>Welcome, click around please...</h2>
+    </div>
+
+    <div id="Intro" class="initiallyHidden">
+      <h2>Intro</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, sem et fringilla efficitur, odio ipsum bibendum nisi, sit amet pretium leo purus ac sem. Sed ligula sapien, sagittis in tellus et, egestas condimentum orci. Integer facilisis ut sapien malesuada semper. Fusce quis quam id risus placerat porta id a elit. Nam suscipit in nunc sit amet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget neque elementum, porttitor tortor non, tempor risus. Nulla nunc lacus, aliquam id arcu condimentum, gravida fermentum magna. Sed feugiat lectus dui. Vestibulum eu purus facilisis odio iaculis faucibus vel vitae eros. Sed maximus auctor leo id varius.</p>
+    </div>
+
+    <div id="Skills" class="initiallyHidden">
+      <h2>Skills</h2>
+
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>LESS</li>
+        <li>java Script</li>
+      </ul>
+    </div>
+
+    <div id="WorkHistory" class="initiallyHidden">
+      <h2>Work History</h2>
+
+      <h3>Employer</h3>
+      <p>CODE: HTML, CSS, LESS</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, sem et fringilla efficitur, odio ipsum bibendum nisi, sit amet pretium leo purus ac sem. Sed ligula sapien, sagittis in tellus et, egestas condimentum orci. Integer facilisis ut sapien malesuada semper. Fusce quis quam id risus placerat porta id a elit. Nam suscipit in nunc sit amet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget neque elementum, porttitor tortor non, tempor risus. Nulla nunc lacus, aliquam id arcu condimentum, gravida fermentum magna. Sed feugiat lectus dui. Vestibulum eu purus facilisis odio iaculis faucibus vel vitae eros. Sed maximus auctor leo id varius.</p>
+
+      <h3>Employer</h3>
+      <p>CODE: HTML, CSS, LESS</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, sem et fringilla efficitur, odio ipsum bibendum nisi, sit amet pretium leo purus ac sem. Sed ligula sapien, sagittis in tellus et, egestas condimentum orci. Integer facilisis ut sapien malesuada semper. Fusce quis quam id risus placerat porta id a elit. Nam suscipit in nunc sit amet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget neque elementum, porttitor tortor non, tempor risus. Nulla nunc lacus, aliquam id arcu condimentum, gravida fermentum magna. Sed feugiat lectus dui. Vestibulum eu purus facilisis odio iaculis faucibus vel vitae eros. Sed maximus auctor leo id varius.</p>
+
+      <h3>Employer</h3>
+      <p>CODE: HTML, CSS, LESS</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, sem et fringilla efficitur, odio ipsum bibendum nisi, sit amet pretium leo purus ac sem. Sed ligula sapien, sagittis in tellus et, egestas condimentum orci. Integer facilisis ut sapien malesuada semper. Fusce quis quam id risus placerat porta id a elit. Nam suscipit in nunc sit amet lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget neque elementum, porttitor tortor non, tempor risus. Nulla nunc lacus, aliquam id arcu condimentum, gravida fermentum magna. Sed feugiat lectus dui. Vestibulum eu purus facilisis odio iaculis faucibus vel vitae eros. Sed maximus auctor leo id varius.</p>
+    </div>
+
+    <div id="Contact" class="initiallyHidden">
+      <h2>Contact Box</h2>
+      <ul>
+        <li>email@email.test</li>
+        <li>1-123-123-1234</li>
+      </ul>
+
+
+    </div>
+  </section>
+
+
+
+  <!-- Java Script -->
+	<script src="js/animation.js"></script>
+
 </body>
 </html>

@@ -1,1 +1,258 @@
-/* Compile your LESS file! */
+/*Mobile fors less var set*/
+@font-face {
+  font-family: 'Mansalva';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Mansalva Regular'), local('Mansalva-Regular'), url(https://fonts.gstatic.com/s/mansalva/v1/aWB4m0aacbtDfvq5NKliKYo.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/*START MY CODE*/
+.initiallyHidden {
+  display: none;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Mansalva', cursive;
+}
+body {
+  height: 90%;
+  width: 65%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 3.85rem;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #428bca;
+  font-size: 1.6rem;
+}
+header {
+  background: #428bca;
+}
+header h1 {
+  padding: 20px;
+  display: inline-block;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  font-size: 2.2rem;
+  padding: 5px 0 1em 0;
+  display: none;
+}
+header nav a {
+  color: #18CAE6;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid silver;
+}
+header nav a:hover {
+  color: silver;
+  text-shadow: 2px 1px black;
+}
+header .hideme img {
+  width: 20%;
+}
+@media (min-width: 500px) {
+  header .hideme {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    flex-flow: row;
+  }
+  header nav a {
+    padding: 0px;
+    width: 40px%;
+    border: 0px solid silver;
+  }
+}
+/*main area*/
+section {
+  border: 1px solid #428bca;
+}
+section div {
+  margin: 20px 3%;
+  padding: 15px;
+  border: 1px solid #428bca;
+}
+section div h3 {
+  font-size: 2rem;
+  margin: 10px 4px 5px 4px;
+}
+section h2 {
+  padding: 5px 0 5px 0;
+  font-size: 3rem;
+}
+section p,
+section ul li {
+  font-size: 1.6rem;
+  margin: 12px 0;
+}
+@media (min-width: 500px) {
+  section div {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #428bca;
+  }
+  section div h3 {
+    font-size: 2.8rem;
+    margin: 20px 8px 10px 8px;
+  }
+  section h2 {
+    padding: 5px 0 15px 0;
+    font-size: 4rem;
+  }
+  section p,
+  section ul li {
+    font-size: 1.8rem;
+    margin: 12px 0;
+  }
+}
+/*
+@media @tablet {}
+@media @desktop {}
+*/
